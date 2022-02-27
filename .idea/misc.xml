@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/dotted.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/dottedborder.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/indicator.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/indicator_grey.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/indicator_white.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/rdo_selected.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/selector_radio_btn_left.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/selector_radio_btn_right.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/selector_radio_btn_text.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/view_rate_background.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/carousel_view.xml" value="0.24791666666666667" />
+        <entry key="app/src/main/res/layout/rate_view.xml" value="0.1140625" />
+        <entry key="app/src/main/res/layout/room_view.xml" value="0.24791666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

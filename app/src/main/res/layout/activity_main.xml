@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/currentlocation"
+            android:gravity="center_vertical"
+            android:text="@string/address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        <TextView
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/indicator"
+            android:gravity="center_vertical|end"
+            android:paddingEnd="20dp"
+            android:text="See All 2/68"
+            android:textColor="@color/white"
+            app:layout_constraintBaseline_toBottomOf="@+id/viewPager"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/horizontalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@+id/indicator">
+            <TextView
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/theme"
+                android:text="@string/amenities"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"
+                android:layout_weight="0.5"
+                android:textAlignment="center"
+                android:textColor="@color/purple_200"
+                app:layout_constraintBottom_toBottomOf="@+id/button"
+                app:layout_constraintEnd_toStartOf="@+id/button"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/workout"
+                android:text="@string/facilities"
+                android:textAllCaps="false"
+                android:background="@android:color/transparent"
+                android:textSize="12dp"
+                android:textColor="@color/purple_200"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonFandB"
+                app:layout_constraintEnd_toStartOf="@+id/buttonFandB"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/button2" />
+
+            <TextView
+                android:id="@+id/buttonFandB"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/fnb"
+                android:text="@string/fnb"
+                android:textAlignment="center"
+                android:background="@android:color/transparent"
+                android:textColor="@color/purple_200"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonKidsAndFamily"
+                app:layout_constraintEnd_toStartOf="@+id/buttonKidsAndFamily"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/button" />
+
+            <TextView
+                android:id="@+id/buttonKidsAndFamily"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/kidsfamily"
+                android:text="@string/kidsfamily"
+                android:textAlignment="center"
+                android:textColor="@color/purple_200"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonWellness"
+                app:layout_constraintEnd_toStartOf="@+id/buttonWellness"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/buttonFandB" />
+
+            <TextView
+                android:id="@+id/buttonWellness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/wellness"
+                android:background="@android:color/transparent"
+                android:text="@string/wellness"
+                android:textAlignment="center"
+                android:textColor="@color/purple_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/buttonKidsAndFamily"
+                app:layout_constraintTop_toBottomOf="@+id/indicator" />
+        </LinearLayout>
+        <RadioGroup
+            android:id ="@+id/radioLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalLayout">
+
+            <RadioButton
+                android:id="@+id/byRoomBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_btn_left"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/by_room"
+                android:textColor="@drawable/selector_radio_btn_text" />
+
+            <RadioButton
+                android:id="@+id/byRateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/selector_radio_btn_text"
+                android:background="@drawable/selector_radio_btn_right"
+                android:gravity="center"
+                android:button="@null"
+                android:text="@string/by_rates"/>
+        </RadioGroup>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioLayout">
+            <include layout="@layout/room_view" android:id="@+id/byRoom"/>
+            <include layout="@layout/rate_view" android:id="@+id/byRate"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
